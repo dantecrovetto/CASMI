@@ -92,3 +92,4 @@ var server = new OpenBCIServer(SERVER_HOST, SERVER_PORT, HTDOCS_PATH);
 client.events.on('sample', function(data) {
   server.socket.sockets.emit('openbci', data);
 });
+
