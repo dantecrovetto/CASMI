@@ -90,6 +90,9 @@ var client = new UDPClient(UDP_PORT, UDP_HOST);
 var server = new OpenBCIServer(SERVER_HOST, SERVER_PORT, HTDOCS_PATH);
 
 client.events.on('sample', function(data) {
+  data = data.map(function(x){
+    return x*0.02235
+  });
   server.socket.sockets.emit('openbci', data);
 });
 
