@@ -7,7 +7,7 @@ def printData(sample):
     #os.system('clear')
     print("----------------")
     print("%f" %(sample.id))
-    print(sample.channel_data)
+    print("%s" % str(sample.channel_data))
     print(sample.aux_data)
     print("----------------")
 
@@ -15,7 +15,7 @@ def printData(sample):
 
 if __name__ == '__main__':
     # port = '/dev/tty.OpenBCI-DN008VTF'
-    port = '/dev/tty.usbserial-DB00JAM0'
+    port = 'COM12'
     # port = '/dev/tty.OpenBCI-DN0096XA'
     baud = 115200
     logging.basicConfig(filename="test.log",format='%(asctime)s - %(levelname)s : %(message)s',level=logging.DEBUG)
