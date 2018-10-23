@@ -16,83 +16,95 @@
     <div class="row">
         <main role="main" class="col-md-9 ml-sm-auto col-lg-11 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Gráficos</h1>
+                 <h1 class="h2">CASMI - Visualización de datos en tiempo real.</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
-                    <div class="btn-group mr-2">
-                        <button class="btn btn-sm btn-outline-secondary">Share</button>
-                        <button class="btn btn-sm btn-outline-secondary">Export</button>
-                    </div>
                     <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
                         <span data-feather="calendar"></span>
-                        This week
+                        Visualizaciones
                     </button>
                 </div>
             </div>
-
-
-            <h2>Section title</h2>
+            <div class="bajada">
+                <p> La visualización enseña los datos obtenidos en tiempo real del equipo OpenBCI, en donde cada gráfico muestra los datos provenientes de cada electrodo (8), los cuales son montados en un casco según el sistema 10-20, y son medidos en MicroVolts por Hertz.</p>
+            </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph1">
+                    <div class="card-2" style="width: 18rem;" id="graph1">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="h5">Electrodo 1  <b>(FP1)</b> </h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor1"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph2">
+                    <div class="card-2" style="width: 18rem;" id="graph2">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 2  <b>(FP2)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor2"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph3">
+                    <div class="card-2" style="width: 18rem;" id="graph3">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 3   <b>(C3)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor3"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph4">
+                    <div class="card-2" style="width: 18rem;" id="graph4">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 4  <b>(C4)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor4"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph5">
+                    <div class="card-2" style="width: 18rem;" id="graph5">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 5  <b>(P7)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor5"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph6">
+                    <div class="card-2" style="width: 18rem;" id="graph6">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 6  <b>(P8)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor6"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph7">
+                    <div class="card-2" style="width: 18rem;" id="graph7">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 7  <b>(O1)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor7"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card" style="width: 18rem;" id="graph8">
+                    <div class="card-2" style="width: 18rem;" id="graph8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">Electrodo 8 <b>(O2)</b></h5>
+                            <p>Data:</p>
+                            <p class="card-text" id="valor8"></p>
+                            <p>MicroVolts x Hertz</p>
                         </div>
                     </div>
                 </div>
@@ -135,9 +147,10 @@ var process = 1;
 
 var socket = io.connect('http://127.0.0.1');
 socket.on('openbci', function (sample,idclient) {
-  if (process % 2 == 0) {
+  if (process % 3 == 0) {
     for (var i = 0; i < 8; i++) {
         waves[i].sample(sample[i]);
+        $("#valor" + (i+1).toString()).html(sample[i]);
     }
     process = 1;
   }
